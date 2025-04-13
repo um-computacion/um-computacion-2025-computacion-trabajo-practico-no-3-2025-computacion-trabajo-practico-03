@@ -185,3 +185,4 @@ Para ejecutar el programa y las pruebas, sigue estos pasos:
    Ingrese un número: ABC
    Error: La entrada debe ser un número válido
    ```
+   
