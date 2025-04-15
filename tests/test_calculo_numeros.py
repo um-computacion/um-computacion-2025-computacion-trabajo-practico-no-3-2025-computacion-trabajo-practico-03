@@ -28,6 +28,20 @@ class TestCalculoNumeros(unittest.TestCase):
         return_value='AAA'
     )
     def test_ingreso_letras(self, patch_input):
+<<<<<<< Updated upstream
+=======
+        from src.exceptions import ingrese_numero
+        with self.assertRaises(ValueError):
+            ingrese_numero()
+    
+    @patch('builtins.input', return_value='')
+    def test_ingreso_vacio(self, patch_input):
+        with self.assertRaises(ValueError):
+            ingrese_numero()
+    
+    @patch('builtins.input', return_value='12abc')
+    def test_ingreso_alfanumerico(self, patch_input):
+>>>>>>> Stashed changes
         with self.assertRaises(ValueError):
             ingrese_numero()
 
