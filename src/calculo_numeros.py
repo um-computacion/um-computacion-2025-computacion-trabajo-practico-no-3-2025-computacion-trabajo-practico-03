@@ -1,4 +1,4 @@
-from exceptions import ingrese_numero
+from exceptions import ingrese_numero, NumeroDebeSerPositivo
 
 def main():
     """
@@ -17,4 +17,4 @@ def main():
             break
 
 if __name__ == "__main__":
-    main() 
+    main()
