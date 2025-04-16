@@ -1,9 +1,7 @@
-from exceptions import ingrese_numero
+from exceptions import ingrese_numero, NumeroDebeSerPositivo
 
 def main():
-    """
-    Programa principal que solicita números al usuario y muestra los resultados.
-    """
+
     while True:
         try:
             numero = ingrese_numero()
