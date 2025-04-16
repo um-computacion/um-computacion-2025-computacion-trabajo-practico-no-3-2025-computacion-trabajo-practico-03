@@ -1,6 +1,7 @@
 class NumeroDebeSerPositivo(Exception):
-    """Excepción lanzada cuando se ingresa un número negativo."""
-    pass
+    def __init__(self):
+        super().__init__('El número debe ser positivo')
+from src.exceptions import NumeroDebeSerPositivo
 
 def ingrese_numero():
     """
@@ -20,4 +21,5 @@ def ingrese_numero():
             raise NumeroDebeSerPositivo("El número debe ser positivo")
         return numero
     except ValueError:
-        raise ValueError("La entrada debe ser un número válido") 
+        raise ValueError("La entrada debe ser un número válido")
+
